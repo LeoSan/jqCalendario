@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba Calendario</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<!-- Libreria DateTimePicker -->
+  <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+  <script src="js/moment.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.es.js"></script>
+
+
+</head>
+<body>
+
+<h1>Prueba calendario sin icono</h1>
+
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <input type='text' class="form-control" id='datetimepicker4' />
+        </div>
+
+        <script type="text/javascript">
+
+            $(function () {
+            	           	
+                $('#datetimepicker4').datetimepicker({
+					format: 'DD-MM-YYYY'       
+				});
+            });
+        </script>
+    </div>
+</div>
+
+
+<h1>Prueba calendario Con icono</h1>
+
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            
+
+            $(function () {
+                $('#datetimepicker1').datetimepicker({
+                	
+                });
+            });
+        </script>
+    </div>
+</div>
+
+</body>
+</html>
